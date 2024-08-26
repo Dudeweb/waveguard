@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Design Documentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 p-6">
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold mb-6">App Design Documentation</h1>
+        
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">1. Onboarding Screens</h2>
+            <div class="mb-4">
+                <h3 class="font-bold">Overlay 1: Welcome Screen</h3>
+                <ul class="list-disc ml-6">
+                    <li><strong>Title</strong>: "Welcome to [App Name]"</li>
+                    <li><strong>Subtitle</strong>: Brief description of the app's purpose ("Control Your Phone's Wireless Radiation").</li>
+                    <li><strong>Call to Action (CTA) Button</strong>: "Get Started"</li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <h3 class="font-bold">Overlay 2: Permissions Screen</h3>
+                <ul class="list-disc ml-6">
+                    <li><strong>Iconography</strong>: Bluetooth, WiFi, Mobile Data icons.</li>
+                    <li><strong>Text</strong>: "We need your permission to manage your phone’s wireless settings."</li>
+                    <li><strong>CTA Button</strong>: "Grant Permissions"</li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <h3 class="font-bold">Overlay 3: Quick Tour</h3>
+                <ul class="list-disc ml-6">
+                    <li><strong>Interactive Area</strong>: Swipe through 3–5 screens explaining key features (e.g., "Schedule Wireless Control", "Inactivity Timer", "Safety Mode").</li>
+                    <li><strong>Progress Dots</strong>: At the bottom to indicate how many screens are left.</li>
+                    <li><strong>CTA Button</strong>: "Finish Setup"</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">2. Home Screen / Dashboard</h2>
+            <div class="mb-4">
+                <h3 class="font-bold">Overlay 4: Home Screen Layout</h3>
+                <ul class="list-disc ml-6">
+                    <li><strong>Header</strong>: "Dashboard" with a small gear icon for Settings.</li>
+                    <li><strong>Quick Toggles</strong>: 
+                        <ul class="list-disc ml-6">
+                            <li><strong>WiFi</strong>: Toggle with "On/Off" text.</li>
+                            <li><strong>Bluetooth</strong>: Toggle with "On/Off" text.</li>
+                            <li><strong>Mobile Data</strong>: Toggle with "On/Off" text.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Status Indicators</strong>: Below each toggle, small text showing current status (e.g., "WiFi Connected", "Bluetooth Off").</li>
+                    <li><strong>Shortcut Buttons</strong>: Buttons leading to "Scheduled Controls", "Safety Mode", and "Profiles".</li>
+                    <li><strong>Footer</strong>: Navigation bar with icons for Home, Settings, and Profiles.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">3. Settings Screen</h2>
+            <div class="mb-4">
+                <h3 class="font-bold">Overlay 5: Settings Layout</h3>
+                <ul class="list-disc ml-6">
+                    <li><strong>Header</strong>: "Settings"</li>
+                    <li><strong>Sections</strong>: 
+                        <ul class="list-disc ml-6">
+                            <li><strong>Scheduled Controls</strong>: Option to set times for automatic wireless disabling.</li>
+                            <li><strong>Inactivity Timer</strong>: Sliders or time input for setting inactivity thresholds.</li>
+                            <li><strong>Safety Mode</strong>: Toggle with options to configure default behavior.</li>
+                            <li><strong>Advanced Settings</strong>: Link to more granular settings like individual app permissions or background activity.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Save Button</strong>: Fixed at the bottom to save changes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">4. Scheduled Controls Screen</h2>
+            <div class="mb-4">
+                <h3 class="font-bold">Overlay 6: Scheduled Controls</h3>
+                <ul class="list-disc ml-6">
+                    <li><strong>Header</strong>: "Scheduled Controls"</li>
+                    <li><strong>Schedule List</strong>: List view of all existing schedules, with icons showing which are active (e.g., "Night Mode: 11:00 PM - 7:00 AM").</li>
+                    <li><strong>Add New Schedule</strong>: Button at the bottom with a "+" icon.</li>
+                    <li><strong>Edit Schedule</strong>: Tap on any schedule to open its configuration.</li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <h3 class="font-bold">Overlay 7: Schedule Configuration</h3>
+                <ul class="list-disc ml-6">
+                    <li><strong>Header</strong>: "Edit Schedule"</li>
+                    <li><strong>Time Picker</strong>: Start time and end time inputs.</li>
+                    <li><strong>Days of the Week</strong>: Horizontal list of days with checkmarks for active days.</li>
+                    <li><strong>Connections to Disable</strong>: Toggles for WiFi, Bluetooth, Mobile Data.</li>
+                    <li><strong>Save/Cancel Buttons</strong>: Fixed at the bottom.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">5. Inactivity Timer Screen</h2>
+            <div class="mb-4">
+                <h3 class="font-bold">Overlay 8: Inactivity Timer</h3>
+                <ul class="list-disc ml-6">
+                    <li><strong>Header</strong>: "Inactivity Timer"</li>
+                    <li><strong>Explanation Text</strong>: "Automatically disable connections after X minutes of inactivity."</li>
+                    <li><strong>Timer Slider</strong>: Slider to set the duration (e.g., from 5 to 60 minutes).</li>
+                    <li><strong>Connections to Disable</strong>: Toggles for WiFi, Bluetooth, Mobile Data.</li>
+                    <li><strong>Save Button</strong>: Fixed at the bottom.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">6. Safety Mode Screen</h2>
+            <div class="mb-4">
+                <h3 class="font-bold">Overlay 9: Safety Mode</h3>
+                <ul class="list-disc ml-6">
+                    <li><strong>Header</strong>: "Safety Mode"</li>
+                    <li><strong>Toggle</strong>: Central toggle to turn Safety Mode on/off.</li>
+                    <li><strong>Description</strong>: "Automatically turn off all connections unless manually overridden."</li>
+                    <li><strong>Override Settings</strong>: Button leading to options where users can specify exceptions (e.g., "Keep WiFi on during Safety Mode").</li>
+                    <li><strong>Save Button</strong>: Fixed at the bottom.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">7. Profile Management Screen</h2>
+            <div class="mb-4">
+                <h3 class="font-bold">Overlay 10: Profile Management</h3>
+                <ul class="list-disc ml-6">
+                    <li><strong>Header</strong>: "Profiles"</li>
+                    <li><strong>Profile List</strong>: List of saved profiles (e.g., "Work Mode", "Sleep Mode").</li>
+                    <li><strong>Add New Profile</strong>: Button with a "+" icon.</li>
+                    <li><strong>Edit Profile</strong>: Tap on a profile to modify its settings.</li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <h3 class="font-bold">Overlay 11: Profile Configuration</h3>
+                <ul class="list-disc ml-6">
+                    <li><strong>Header</strong>: "Edit Profile"</li>
+                    <li><strong>Profile Name Input</strong>: Text field to name the profile.</li>
+                    <li><strong>Profile Settings</strong>: Toggles and settings similar to the main Settings screen, but specific to this profile.</li>
+                    <li><strong>Set as Default</strong>: Checkbox to mark this profile as the default.</li>
+                    <li><strong>Save/Cancel Buttons</strong>: Fixed at the bottom.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">8. Notifications and Alerts</h2>
+            <div class="mb-4">
+                <h3 class="font-bold">Overlay 12: Notification Settings</h3>
+                <ul class="list-disc ml-6">
+                    <li><strong>Header</strong>: "Notification Settings"</li>
+                    <li><strong>List of Notifications</strong>: Toggle switches for different types of notifications (e.g., "Inactivity Timer Activated", "Safety Mode Enabled").</li>
+                    <li><strong>Alert Styles</strong>: Options to choose how notifications are displayed (e.g., banner, silent, etc.).</li>
+                    <li><strong>Save Button</strong>: Fixed at the bottom.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">9. Accessibility Settings</h2>
+            <div class="mb-4">
+                <h3 class="font-bold">Overlay 13: Accessibility</h3>
+                <ul class="list-disc ml-6">
+                    <li><strong>Header</strong>: "Accessibility Settings"</li>
+                    <li><strong>Text Size</strong>: Slider to adjust text size.</li>
+                    <li><strong>Color Contrast</strong>: Toggle for high contrast mode.</li>
+                    <li><strong>Voice Commands</strong>: Toggle to enable/disable voice control.</li>
+                    <li><strong>Save Button</strong>: Fixed at the bottom.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">10. Responsive Design Considerations</h2>
+            <div class="mb-4">
+                <h3 class="font-bold">Overlay 14: Tablet Layout</h3>
+                <ul class="list-disc ml-6">
+                    <li>Ensure that all screens scale and adjust when viewed on larger devices like tablets.</li>
+                    <li><strong>Two-Column Layout</strong>: For larger screens, consider using a two-column layout where the settings or list views are on the left, and details or editing screens are on the right.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-xl font-semibold mb-4">11. App Store Requirements</h2>
+            <div>
+                <h3 class="font-bold">Overlay 15: App Icon and Preview Screens</h3>
+                <ul class="list-disc ml-6">
+                    <li><strong>App Icon Design</strong>: Simple, recognizable, and representative of the app's functionality.</li>
+                    <li><strong>App Preview Screens</strong>: Show key features, with captions, optimized for the dimensions required by the App Store and Google Play Store.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
